@@ -1,21 +1,22 @@
 // UI Logic
+function results() {
+    makingAr();
+    let resultAr = [];
+    array.foreach(function (element) {
+        if (array.includes(1)) {
+            resultAr.push("Bleep!");
+        } else if (array.includes(2)) {
+            resultAr.push("Bloop!");
+        } else if (array.includes(3)) {
+            resultAr.push("Won't you be my neighbor?");
+        } else {
+            resultAr.push(array);
+        }
 
-// function result(){
-//     for (inputed num < i++ {
-//         if input includes.(1)
-//             let  "Bleep".
-//         }
-//     })
-
-
-//  results
-// }
-
-
-
-
-
-
+    });
+    let p = document.getElementById("results");
+    p.innerText = array.join(", ");
+};
 
 // Business Logic
 
@@ -26,15 +27,12 @@ function makingAr() {
     for (let index = 0; index <= inputNum; index += 1) {
         array.push(index);
     };
-
-    let p = document.getElementById("results");
-    p.innerText = array.join(", ");
 };
 
 window.onload = function () {
     let form = document.getElementById("putInANum");
     form.addEventListener("submit", (event) => {
         event.preventDefault();
-        makingAr();
+        results();
     });
 };
