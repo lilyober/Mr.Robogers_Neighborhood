@@ -18,21 +18,27 @@
 
 
 // Business Logic
-// window.onload = function () {
-//     let form = document.getElementById("putInANum");
-//     form.addEventListener("submit", (event) => {
-//         event.preventDefault();
-let inputNum = document.getElementById("number").value;
-let array = [];
 
-for (let index = 0; index <= inputNum; index + 1) {
-    array.push(array[index] + 1);
+
+function makingAr() {
+    let inputNum = document.getElementById("number").value;
+    let array = [];
+
+    for (let index = 0; index <= inputNum; index + 1) {
+        array.push(array[index] + 1);
+    };
+
+    let p = document.getElementById("results");
+    p.innerText = array;
+}
+
+window.onload = function () {
+    let form = document.getElementById("putInANum");
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        makingAr();
+    });
 };
-
-let p = document.getElementById("results");
-p.innerText = array;
-
-
 
 
 
