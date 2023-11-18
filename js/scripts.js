@@ -2,8 +2,8 @@
 
 // function result(){
 //     for (inputed num < i++ {
-//         if sum = sum + 1 === functionOne{
-//             then "Bleep"
+//         if input includes.(1)
+//             let  "Bleep".
 //         }
 //     })
 
@@ -18,19 +18,27 @@
 
 
 // Business Logic
+window.onload = function () {
+    let form = document.getElementById("putInANum");
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        let inputNum = document.querySelector("number").value;
+        let array = [];
 
-function functionOne(){
+        for (let index = 0; index <= inputNum; index + 1) {
+            array.push(index);
+        };
+
+        let p = document.getElementById("results");
+        p.innerText = array;
+    });
 
 };
 
-function functionTwo(){
-    
-};
 
-function functionThree(){
-    
-};
 
-function sentenceGen( ){
-    // calls on result function
-}
+
+
+// function sentenceGen( ){
+//     calls on result function
+// }
