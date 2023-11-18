@@ -1,4 +1,4 @@
-Describe: makingAr();
+Describe: makingFinalAr();
 
 Test: "Make an array from the user's inputed number"
 Code: 3;
@@ -8,7 +8,7 @@ Test: "Expand array to include numbers before inputted number."
 Code: 3;
 Expected Output: [1, 2, 3];
 
-Describe: results();
+Describe: roboChanger();
 
 Test: "When one is present, change it to "Bleep!"
 Code: 3;
