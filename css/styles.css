@@ -1,3 +1,17 @@
 .hidden {
     display: none;
 }
+
+h1 {
+    font-size: 35px;
+    text-align: center;
+    color: navy;
+}
+
+body {
+    background-color: aquamarine;
+    backdrop-filter: blur(5px);
+    height: 600px;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230912/pngtree-a-cobblestone-street-with-buildings-on-either-side-image_13153769.png);
+    background-size: cover;
+}
