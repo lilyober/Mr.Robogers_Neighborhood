@@ -3,7 +3,7 @@ function roboChanger() {
     let resultAr = [];
     let fillerAr = makingAr();
 
-    fillerAr.forEach((element) => {
+    fillerAr.forEach(function (element) {
         if (fillerAr.includes(1)) {
             resultAr.push("Bleep!");
         } else if (fillerAr.includes(2)) {
@@ -37,5 +37,9 @@ window.onload = function () {
     form.addEventListener("submit", (event) => {
         event.preventDefault();
         roboChanger();
+
+        const formRemove = document.querySelector("form");
+        formRemove.remove();
+        document.querySelector("div#resetButton").removeAttribute("class");
     });
 };
