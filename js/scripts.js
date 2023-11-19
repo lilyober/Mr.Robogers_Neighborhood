@@ -1,30 +1,35 @@
 // UI Logic
-const roboChanger= function roboChanger() {
+function roboChanger() {
     let resultAr = [];
-    let fillerAr = [];
+    let fillerAr = makingAr();
 
     fillerAr.forEach((element) => {
-        if (element.includes(1)) {
+        if (fillerAr.includes(1)) {
             resultAr.push("Bleep!");
-        } else if (element.includes(2)) {
+        } else if (fillerAr.includes(2)) {
             resultAr.push("Bloop!");
-        } else if (element.includes(3)) {
+        } else if (fillerAr.includes(3)) {
             resultAr.push("Won't you be my neighbor?");
         } else {
             resultAr.push(element);
         }
+
+        let p = document.getElementById("results");
+        p.innerText = resultAr.join(", ");
+
     });
 };
 
 // Business Logic
-function makingFinalAr() {
+function makingAr() {
     let arrayInput = [];
     const inputNum = document.getElementById("number").value;
 
     for (let index = 0; index <= inputNum; index += 1) {
-       roboChanger(arrayInput).push;
+        arrayInput.push(index);
     };
 
+    return arrayInput;
 };
 
 window.onload = function () {

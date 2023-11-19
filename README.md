@@ -1,4 +1,4 @@
-Describe: makingFinalAr();
+Describe: makingAr();
 
 Test: "Make an array from the user's inputed number"
 Code: 3;
