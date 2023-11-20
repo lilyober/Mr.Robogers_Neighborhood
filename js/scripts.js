@@ -7,7 +7,7 @@ function roboChanger() {
             resultAr.push("Bleep!");
         } else if (fillerAr.includes(2)) {
             resultAr.push("Bloop!");
-        } else if (fillerAr.includes(3)) {
+        } else if (FillerAr.includes(3)) {
             resultAr.push("Won't you be my neighbor?");
         } else {
             resultAr.push(element);
