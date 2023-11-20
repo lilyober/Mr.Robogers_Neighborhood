@@ -1,4 +1,3 @@
-// UI Logic
 function roboChanger() {
     let resultAr = [];
     let fillerAr = makingAr();
@@ -20,7 +19,6 @@ function roboChanger() {
     });
 };
 
-// Business Logic
 function makingAr() {
     let arrayInput = [];
     const inputNum = document.getElementById("number").value;
